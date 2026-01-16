@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untuk Kamu Selalu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="border-box">
+    <h1>Kamu itu spesial 💖</h1>
+    <h3>dan selalu punya tempat di hati aku</h3>
+  </div>
+
+  <div class="foto-besar">
+    <img src="pegangan.jpeg" alt="Foto Kamu">
+  </div>
+
+  <div class="pesan">
+    <p>
+      Aku mungkin nggak sempurna,  
+      tapi perasaan aku ke kamu selalu tulus.  
+      Makasih ya sudah jadi diri kamu sendiri,  
+      sudah mau bertahan, dan terus berjuang bareng aku 💕  
+    </p>
+  </div>
+
+  <a href="hal4.html" class="btn">Masih ada satu lagi 💗</a>
+</div>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
+  });
+});
+</script>
+
+</body>
+</html>

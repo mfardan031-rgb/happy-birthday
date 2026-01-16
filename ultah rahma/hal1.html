@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="border-box">
+    <h1>Haloow sayang 💕</h1>
+    <h2>Happy Birthday yaaaa 🎂🎉</h2>
+  </div>
+
+  <a href="ha2.html" class="btn">
+    Ayoo kita lihat hadiah kamu!!
+  </a>
+</div>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
+  });
+});
+</script>
+
+</body>
+</html>

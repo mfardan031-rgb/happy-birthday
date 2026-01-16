@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kenangan Manis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Kenangan kecil kita 💞</h1>
+  <h3>yang selalu bikin aku senyum</h3>
+
+  <div class="grid">
+    <img src="fotbar1.jpeg" class="bulat">
+    <img src="fotbar2.jpeg" class="bulat">
+    <img src="fotbar3.jpeg" class="bulat">
+  </div>
+
+  <p style="margin-top:20px;">
+    Semoga ke depannya kita  
+    bisa bikin lebih banyak kenangan lagi yaa 💕
+  </p>
+
+  <a href="hal5.html" class="btn">Sekarang yang terakhir 💗</a>
+</div>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
+  });
+});
+</script>
+
+</body>
+</html>

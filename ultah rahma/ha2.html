@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untuk Kamu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Ini buat kamu 💗</h1>
+
+  <div class="foto-besar">
+    <img src="rahma.jpg.jpeg">
+  </div>
+
+  <div class="pesan">
+    Selamat ulang tahun yaa sayangku💞  
+      Terimakasih sudah hadir di hidup akuu.  
+      Semoga kamu selalu sehat, selalu bahagia,  
+      dan semua impian kamu bisa tercapai satu per satuu yaaa.
+      Aku bangga punya kamuuu, ilysm 💕
+  </div>
+
+  <a href="hal3.html" class="btn" onclick="localStorage.setItem('playMusic','yes')">
+    Lanjut 💗
+  </a>
+</div>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
+  });
+});
+</script>
+
+</body>
+</html>
